@@ -1,0 +1,12 @@
+{
+  "_comment": "Wave 4 Task 4A: the Blender-side socket server is now bundled inside the Plotex addon (plotex-blender-plugin/plotex_mcp/addon.py). Claude Code still talks to a stdio MCP server via this entry — for now we keep uvx so existing user setups keep working without reconfiguration. A future update will switch this to `python -m plotex_mcp.server` once the bundled stdio entry point is stable across platforms.",
+  "mcpServers": {
+    "blender": {
+      "command": "uvx",
+      "args": ["blender-mcp"],
+      "env": {
+        "BLENDER_PORT": "9877"
+      }
+    }
+  }
+}

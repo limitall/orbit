@@ -1,0 +1,7 @@
+# Blender auto-backup
+*.blend1
+
+# OS / misc
+.DS_Store
+*.local
+npm-debug.log*
