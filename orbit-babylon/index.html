@@ -22,7 +22,7 @@
         position: fixed; top: 12px; right: 12px; z-index: 10;
         font: 13px/1.2 system-ui, sans-serif; color: #e6e8eb;
         background: rgba(20,24,30,0.72); padding: 10px; border-radius: 8px;
-        backdrop-filter: blur(6px); display: none; width: 132px;
+        backdrop-filter: blur(6px); display: none; width: 168px;
       }
       #floors .title { font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: #9aa1ab; margin-bottom: 8px; }
       #floors button {
@@ -46,6 +46,9 @@
       Drag to orbit · scroll to zoom
     </div>
     <div id="floors"></div>
+    <div id="editHint" style="display:none; position:fixed; bottom:14px; left:50%; transform:translateX(-50%); z-index:10; font:13px system-ui,sans-serif; color:#fff; background:rgba(45,108,255,0.85); padding:8px 14px; border-radius:8px;">
+      Edit mode: click a façade region to toggle <b>wall ↔ window</b> (red = will be cut). Enable Front/Left/Right first.
+    </div>
     <canvas id="renderCanvas"></canvas>
     <script type="module" src="/src/main.js"></script>
   </body>
